@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
+import { FirebaseConfig } from '../firebase-config';
+import { AngularFireModule } from 'angularfire2';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -15,9 +18,10 @@ import { GlitterComponent } from './glitter/glitter.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    GlitterComponent
+    GlitterComponent,
   ],
   imports: [
+    AngularFireModule.initializeApp(FirebaseConfig),
     AppRoutingModule,
     BrowserModule,
     FormsModule,
