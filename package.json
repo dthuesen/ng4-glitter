@@ -1,0 +1,50 @@
+{
+  "name": "ng4-glitter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^4.2.2",
+    "@angular/compiler": "^4.2.2",
+    "@angular/compiler-cli": "^4.2.2",
+    "@angular/core": "^4.2.2",
+    "@angular/forms": "^4.2.2",
+    "@angular/http": "^4.2.2",
+    "@angular/platform-browser": "^4.2.2",
+    "@angular/platform-browser-dynamic": "^4.2.2",
+    "@angular/router": "^4.2.2",
+    "angularfire2": "^4.0.0-rc.1",
+    "code-point-at": "^1.1.0",
+    "core-js": "^2.4.1",
+    "firebase": "^4.1.2",
+    "rxjs": "^5.4.0",
+    "ts-helpers": "^1.1.2",
+    "zone.js": "^0.8.12"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.1.1",
+    "@types/jasmine": "^2.5.52",
+    "@types/node": "^7.0.31",
+    "codelyzer": "3.0.1",
+    "jasmine-core": "2.6.3",
+    "jasmine-spec-reporter": "4.1.0",
+    "karma": "1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-remap-istanbul": "^0.6.0",
+    "protractor": "5.1.2",
+    "ts-node": "3.0.6",
+    "tslint": "5.4.3",
+    "typescript": "~2.3.4",
+    "webdriver-manager": "10.2.5"
+  }
+}
