@@ -5,17 +5,17 @@
   <p>&nbsp;</p>
   
   <div class="row">
-    <form class="col-md-4" novalidate>
+    <form class="col-md-4" #form="ngForm" novalidate>
       <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" name="email" required>
+        <input type="email" class="form-control" name="email" ngModel required>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" name="password" class="form-control" required>
+        <input type="password" name="password" class="form-control" ngModel required>
       </div>
-      <button type="button" class="btn btn-default">Sign-up</button>
-      <button type="button" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-default" (click)="signup(form)">Sign-up</button>
+      <button type="button" class="btn btn-primary" (click)="login(form)">Login</button>
     </form>
   </div>
 </div>

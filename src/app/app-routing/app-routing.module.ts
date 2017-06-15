@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'glitter', pathMatch: 'full' },
   { path: 'glitter', component: GlitterComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', component: GlitterComponent },
+  // { path: '**', component: GlitterComponent },
 ];
 
 @NgModule({

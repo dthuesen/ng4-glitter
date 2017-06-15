@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { FirebaseConfig } from '../firebase-config';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 import { AppComponent } from './app.component';
@@ -26,6 +28,8 @@ import { GlitterComponent } from './glitter/glitter.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
